@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:TraderWpf"
         mc:Ignorable="d"
         d:DesignHeight="450" d:DesignWidth="800"
-        Title="RegisterPage"
+        Title="RegisterPage">
+
     <Grid Margin="5,5,5,5">
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
@@ -72,15 +73,16 @@
         Grid.Column="0"
         />
 
-     <TextBox
+    <TextBox
         FontSize="15"
         HorizontalContentAlignment="Left"
         VerticalContentAlignment="Center"
         Grid.Row="0"
         Grid.Column="1"
-        
-     <PasswordBox.
-        Text="Jelszó mégegyszer"
+        />
+
+    <PasswordBox.
+        Text="Jelszó"
         FontSize="15"
         FontWeight="Bold"
         HorizontalAlignment="Center"
@@ -89,7 +91,7 @@
         Grid.Column="1"
         />
 
-     <PasswordBox.
+    <PasswordBox.
        Text="Jelszó mégegyszer"
        FontSize="15"
        FontWeight="Bold"
@@ -97,6 +99,20 @@
        VerticalAlignment="Center"
        Grid.Row="2"
        Grid.Column="1"
+       />
+       
+      <StackPanel Grid.Row="5" Grid.Column="1">
+          <Button>
+              x:Name="RegButton"
+              Content="Regisztrálás"
+              FontSize="20"
+              Foreground="White"
+              Background="Blue"
+              Height="50"
+              Width="150"
+              
+          </Button>
             
-    </Grid>
+      </StackPanel>
+   </Grid>
 </Page>
