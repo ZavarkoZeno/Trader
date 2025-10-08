@@ -10,12 +10,12 @@ public class Class1
 
 			public MysqlConnection _connection;
 
-		    private string _host;
-	        private string _port;
-	        private string _db;
-	        private string _password;
+		    private String _host;
+	        private String _port;
+	        private String _db;
+	        private String _password;
 
-	        private string _connectionString;
+	        private String _connectionString;
 
 	        public Connect()
 	        {

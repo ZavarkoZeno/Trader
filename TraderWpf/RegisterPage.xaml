@@ -74,6 +74,7 @@
         />
 
     <TextBox
+        x:Name="userNameTextBox"
         FontSize="15"
         HorizontalContentAlignment="Left"
         VerticalContentAlignment="Center"
@@ -81,8 +82,8 @@
         Grid.Column="1"
         />
 
-    <PasswordBox.
-        Text="Jelszó"
+    <PasswordBox
+        x:Name="passwordTextBox1"
         FontSize="15"
         FontWeight="Bold"
         HorizontalAlignment="Center"
@@ -91,8 +92,8 @@
         Grid.Column="1"
         />
 
-    <PasswordBox.
-       Text="Jelszó mégegyszer"
+    <PasswordBox
+        x:Name="passwordTextBox2"
        FontSize="15"
        FontWeight="Bold"
        HorizontalAlignment="Center"
@@ -100,8 +101,17 @@
        Grid.Row="2"
        Grid.Column="1"
        />
-       
-      <StackPanel Grid.Row="5" Grid.Column="1">
+
+    <TextBox
+        x:Name="userEmailTextBox"
+        FontSize="15"
+        HorizontalContentAlignment="Left"
+        VerticalContentAlignment="Center"
+        Grid.Row="0"
+        Grid.Column="1"
+    />
+
+        <StackPanel Grid.Row="5" Grid.Column="1">
           <Button>
               x:Name="RegButton"
               Content="Regisztrálás"
@@ -110,7 +120,7 @@
               Background="Blue"
               Height="50"
               Width="150"
-              
+              Click="regButton_Click"
           </Button>
             
       </StackPanel>
